@@ -1,0 +1,155 @@
+
+"info": {
+		"_postman_id": "53745629-fb89-4d45-9beb-ca59484ef1a9",
+		"name": "Consents",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Consents",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "42b657ddced951c9bece3aa8c75df434701b3999569b43eb17c83f7a7b5d43dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Api-Test",
+						"value": "{{x-api-test}}"
+					},
+					{
+						"key": "x-caller-id",
+						"value": "{{x-caller-id}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/open-banking/consents/v1/internal/consents",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"open-banking",
+						"consents",
+						"v1",
+						"internal",
+						"consents"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Consent by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "{{x-api-test}}",
+						"type": "text"
+					},
+					{
+						"key": "x-caller-id",
+						"value": "{{x-caller-id}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{host}}/open-banking/consents/v1/internal/consents/urn:mercadopago:eb033f15-afa4-4b68-bbe4-67c92db37061",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"open-banking",
+						"consents",
+						"v1",
+						"internal",
+						"consents",
+						"urn:mercadopago:eb033f15-afa4-4b68-bbe4-67c92db37061"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Consent Authorization-endpoint",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "{{x-api-test}}",
+						"type": "text"
+					},
+					{
+						"key": "x-caller-id",
+						"value": "{{x-caller-id}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/open-banking/consents/v1/internal/consents/urn:mercadopago:eb033f15-afa4-4b68-bbe4-67c92db37061/authorization-endpoint",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"open-banking",
+						"consents",
+						"v1",
+						"internal",
+						"consents",
+						"urn:mercadopago:eb033f15-afa4-4b68-bbe4-67c92db37061",
+						"authorization-endpoint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Consent Validate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "{{x-api-test}}",
+						"type": "text"
+					},
+					{
+						"key": "x-caller-id",
+						"value": "{{x-caller-id}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/open-banking/consents/v1/internal/consents/urn:mercadopago:eb033f15-afa4-4b68-bbe4-67c92db37061/validate",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"open-banking",
+						"consents",
+						"v1",
+						"internal",
+						"consents",
+						"urn:mercadopago:eb033f15-afa4-4b68-bbe4-67c92db37061",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
